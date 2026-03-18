@@ -99,7 +99,7 @@ func run(ctx context.Context, l *logger.L, opts options) error {
 		&wg,
 		router,
 		opts.HTTPAddr,
-		ghttp.WithTimeeouts(10*time.Second),
+		ghttp.WithTimeouts(10*time.Second),
 	)
 
 	wg.Wait()
